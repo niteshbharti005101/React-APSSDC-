@@ -1,0 +1,22 @@
+{
+    "profiles":[
+        {
+            "basics":{
+                "name":"Nitesh Bharti",
+                "role": "Web Developer",
+                "email": "niteshbharti5101@gmail.com",
+                "mobile": "+91 9123119925",
+                "Address": "SRM University AP, Amaravathi"
+            }
+        },
+        {
+            "basics":{
+                "name":"Nitesh Bharti",
+                "role": "Web Developer",
+                "email": "niteshbharti5101@gmail.com",
+                "mobile": "+91 9123119925",
+                "Address": "SRM University AP, Amaravathi"
+            }
+        }
+    ]
+}
