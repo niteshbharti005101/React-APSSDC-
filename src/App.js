@@ -2,12 +2,36 @@ import React,{Component} from 'react';
 import './App.css';
 import Sample from './Sample';
 import data from './data.json';
+import StatesInFunction from './statesInFunction';
 class App extends Component{
+  constructor(){
+    super();
+    this.state={
+      name:"Nitesh"
+    }
+  }
+
+  changeStateValue=()=>{
+    this.setState({
+      name:"Hovering"
+    })
+  }
+  
+
+  stateInitialValue=()=>{
+    this.setState({
+      name:"Nitesh"
+    })
+  }
+  
   render(){
-    console.log(data);
-    return (<div className="App"><h2> Hello</h2>
+    //console.log(data);
+  return (<div className="App"><h2 
+  onMouseOver={this.changeStateValue}
+  onMouseLeave={this.stateInitialValue}> {this.state.name}</h2>
     <App1></App1>
     <Sample></Sample>
+    <StatesInFunction />
     </div>
     )
   }
