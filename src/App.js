@@ -31,7 +31,7 @@ class App extends Component{
   onMouseLeave={this.stateInitialValue}> {this.state.name}</h2>
     <App1></App1>
     <Sample></Sample>
-    <StatesInFunction />
+    <StatesInFunction name="Nitesh" age="20 years"/>
     </div>
     )
   }

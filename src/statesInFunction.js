@@ -1,15 +1,15 @@
 import React,{useState} from 'react';
 
-let StatesInFunction=()=>{
-    const [count,setCount]=useState();
+let StatesInFunction=(props)=>{
+    let initialValue=0;
+    let [count,setCount]=useState(initialValue);
     return(
         <div>
-            <h2> States In Function Component</h2>
+            <h2> {props.name} is {typeof(Number(props.age))} old</h2>
             <h2> {count}</h2>
-            <h2> {typeof(count)}</h2>
-            <h2 onMouseOver={()=>setCount("Hi")}
-                onMouseLeave={()=>setCount("Bye")}> {typeof(count)}</h2>
-
+            <button onClick={()=>{setCount(count+=1)}}>Increment</button>
+            <button onClick={()=>{setCount(count-=1)}}>Decrement</button>
+            <button onClick={()=>{setCount(count=initialValue)}}>Initial</button>
         </div>
     )
 }
