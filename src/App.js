@@ -3,6 +3,7 @@ import './App.css';
 import Sample from './Sample';
 import data from './data.json';
 import StatesInFunction from './statesInFunction';
+import StatesInClass from './statesInClass';
 class App extends Component{
   constructor(){
     super();
@@ -32,6 +33,7 @@ class App extends Component{
     <App1></App1>
     <Sample></Sample>
     <StatesInFunction name="Nitesh" age="20 years"/>
+    <StatesInClass name="Bharti" age="20 years"/>
     </div>
     )
   }
